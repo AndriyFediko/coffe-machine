@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe machine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/coffee-cup.png">
+</head>
+<body>
+    <div class="wrap">
+        <div class="predictionContainer">
+            <img src="./img/closeIcon.png" alt="close" class="close">
+            <div class="coffeTypeImage"></div>
+            <span class="coffePredictionText">Maybe you want to order Latte?</span>
+            <div class="answerContainer">
+                <button class="btnYes">Yes</button>
+            </div>
+            <div class="loardingLine">
+                <div class="loardingLineProgress"></div>
+            </div>
+        </div>
+        <div class="waterBucket">
+            <div class="waterPlusBtn plusBtn">
+                <img src="./img/WRONG.png" alt="+">
+            </div>
+            <div class="liquidContainer">
+                <span class="liquidType">Water</span>
+                <div class="water"></div>
+            </div>
+        </div>
+        <div class="coffeMachine">
+            <div class="coffeMachineTop">
+                <div class="coffeMachineTopLine"></div>
+                <div class="coffeMachineTopControlPanel">
+                    <div class="triangle"></div>
+                    <div class="controlContainer">
+                        <div class="cookingProgress">
+                            <div class="progressBar">
+                                <span class="ProgressInPersents">0%</span>
+                                <div class="progressBarProgress"></div>
+                            </div>
+                            <span class="time">Time remain: 5:01</span>
+                            <span class="takeNewOrder">Stop and take new order</span>
+                        </div>
+                        <div class="coffeTypeSlider">
+                            <div class="sliderBtnPrew">
+                                <img src="./img/sliderArrow.png" alt="<">
+                            </div>
+                            <div class="sliderVisibleParth">
+                                <div class="sliderLine">
+                                    <div class="sliderIteam">
+                                        <img src="./img/latteCup.png" alt="latte">
+                                        <span class="sliderIteamCoffeType">Latte</span>
+                                    </div>
+                                    <div class="sliderIteam">
+                                        <img src="./img/americanoCup.png" alt="latte">
+                                        <span class="sliderIteamCoffeType">Americano</span>
+                                    </div>
+                                    <div class="sliderIteam">
+                                        <img src="./img/espressoCup.png" alt="latte">
+                                        <span class="sliderIteamCoffeType">Espresso</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slideBtnNext">
+                                <img src="./img/sliderArrow.png" alt=">">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="triangle2"></div>
+                </div>
+            </div>
+            <div class="coffeMachineMiddle">
+                <div class="tap"></div>
+                <div class="coffeLiquidAnimation"></div>
+                <div class="steamAnimation">
+                    <div class="steam steam1"></div>
+                    <div class="steam steam3"></div>
+                    <div class="steam steam5"></div>
+                </div>
+                <div class="paperCup"></div>
+            </div>
+            <div class="coffeMachineBottom">
+                <div class="coffeMachineBottomControlPanel">
+                    <div class="startCookingBox">
+                        <button class="startCookingBtn">
+                            <img src="./img/turnOnBtn.png" alt="Start">
+                        </button>
+                    </div>
+                </div>
+                <div class="coffeMachineBottomline"></div>
+            </div>
+        </div>
+        <div class="milkBucket">
+            <div class="plusBtn milkPlusBtn">
+                <img src="./img/WRONG.png" alt="+">
+            </div>
+            <div class="liquidContainer">
+                <span class="liquidType">Milk</span>
+                <div class="milk"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

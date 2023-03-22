@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+.wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efb54a;
+}
+
+.coffeMachine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coffeMachineTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coffeMachineTopLine {
+    width: 520px;
+    height: 18px;
+    background-color: #3c2010;
+}
+
+.coffeMachineTopControlPanel {
+    width: 500px;
+    height: 200px;
+    background-color: #735123;
+    display: flex;
+    justify-content: space-between;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 220px 0 0 25px;
+    border-color: transparent transparent transparent #efb54a;
+}
+
+.triangle2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 220px 25px;
+    border-color: transparent transparent #efb54a transparent;
+}
+.controlContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.startCookingBox{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.startCookingBtn{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.startCookingBtn img{
+    width: 50%;
+}
+.coffeMachineMiddle{
+    width: 410px;
+    height: 370px;
+    background-color: #3a240d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.tap{
+    width: 144px;
+    height: 85px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./img/tap.png);
+    z-index: 2;
+}
+.paperCup{
+    width: 112px;
+    height: 163px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./img/paperCup.png);
+    z-index: 2;
+}
+.coffeMachineBottomControlPanel{
+    width: 450px;
+    height: 80px;
+    background-color: #735123;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.coffeMachineBottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coffeMachineBottomline{
+    width: 480px;
+    height: 18px;
+    background-color: #39240f;
+}
+.cookingProgress{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.progressBar{
+    width: 80%;
+    height: 35px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 2px solid white;
+}
+.time{
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+.progressBarProgress{
+    width: 0%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #39240f;
+}
+.ProgressInPersents{
+    position: absolute;
+    font-size: 1em;
+    left: calc(50% - 16px);
+    margin-top: 5px;
+}
+.coffeTypeSlider{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sliderVisibleParth{
+    width: 180px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 20px;
+    position: relative;
+}
+.slideBtnNext img{
+    width: 15px;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.sliderBtnPrew img{
+    width: 15px;
+    cursor: pointer;
+}
+.sliderLine{
+    position: absolute;
+    margin-left: 0;
+    transition: 0.3s;
+    height: 200px;
+    display: flex;
+}
+.sliderIteam{
+    width: 180px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sliderIteam img{
+    width: 150px;
+}
+.sliderIteamCoffeType{
+    font-size: 1.2em;
+    color: white;
+    margin: 10px 0;
+}
+.waterBucket, .milkBucket{
+    width: 200px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.plusBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(63, 161, 63);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.plusBtn img{
+    width: 70%;
+}
+.liquidContainer{
+    width: 100%;
+    height: 300px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(228, 255, 255, 0.308);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.liquidType{
+    font-size: 1.4em;
+    color: #39240f;
+    font-weight: 700;
+    margin-bottom: 140px;
+    position: absolute;
+}
+.milk{
+    height: 0;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: aliceblue;
+    transition: 0.3s;
+}
+.water{
+    height: 0;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(118, 212, 255);
+    transition: 0.3s;
+}
+.sliderLine .sliderIteam:nth-child(2) .sliderIteamCoffeType{
+    margin-top: -7px;
+}
+.sliderLine .sliderIteam:nth-child(2) img{
+    margin-top: -22px;
+}
+.sliderLine .sliderIteam:nth-child(3) .sliderIteamCoffeType{
+    margin-top: -7px;
+}
+.sliderLine .sliderIteam:nth-child(3) img{
+    margin-top: -22px;
+}
+.takeNewOrder{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.coffeLiquidAnimation{
+    width: 20px;
+    height: 50px;
+    background-color: #aa6d31;
+    position: absolute;
+    margin-top: 35px;
+    z-index: 1;
+}
+.steamAnimation{
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin-top: 150px;
+    opacity: 1;
+    margin-top: 190px;
+}
+.steam{
+    width: 10px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgba(240, 248, 255, 0.508);
+    z-index: 1;
+}
+.steam1, .steam3, .steam5{
+    margin-top: 15px;
+}
+.steamAnimation-active{
+    margin-top: 150px;
+    animation: steamAnimation 4s 1;
+}
+.coffeLiquidAnimation-active{
+    animation: coffeMove 5s 1;
+}
+.predictionContainer{
+    width: 250px;
+    height: 220px;
+    position: absolute;
+    z-index: 3;
+    background-color: #222;
+    top: 30px;
+    left: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.predictionContainer img:nth-child(1){
+    position: absolute;
+    width: 30px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 210px;
+}
+.coffeTypeImage{
+    width: 100px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./img/latteCup.png);
+    margin-top: 30px;
+}
+.coffePredictionText{
+    text-align: center;
+}
+.btnYes{
+    width: 120px;
+    height: 35px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(35, 148, 35);
+    outline: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.loardingLine{
+    width: 100%;
+    height: 3px;
+    margin-top: 19px;
+}
+.loardingLineProgress{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(40, 209, 40);
+    transition: 0.3s;
+}
+@keyframes coffeMove{
+    0%{height: 50px}
+    20%{height: 200px}
+    80%{height: 200px}
+    100%{height: 50px}
+}
+@keyframes steamAnimation{
+    0%{
+        margin-top: 190px;
+        opacity: 1;
+    }
+    45%{
+        margin-top: 100px;
+        opacity: 0;
+    }
+    54.999%{
+        opacity: 0;
+    }
+    55%{
+        margin-top: 190px;
+        opacity: 1;
+    }
+    100%{
+        margin-top: 100px;
+        opacity: 0;
+    }
+}
