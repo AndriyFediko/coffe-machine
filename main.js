@@ -50,7 +50,6 @@ function CoffeMachine(power) {
 
     function onReady() {
         clearInterval(intervalID);
-        console.log("кава готова");
         $(".progressBarProgress").css("width", `100%`);
         $(".ProgressInPersents").text(`100%`);
         $(".takeNewOrder").text("Take new order");
@@ -91,7 +90,6 @@ function CoffeMachine(power) {
                     favouriteCoffe = "Latte";
                 }
                 localStorage.favouriteCoffe = favouriteCoffe;
-                console.log(localStorage.favouriteCoffe)
             }
         } else if (this.waterAmout >= waterNeed && this.milkAmount < milkNeed) {
             alert("Недостатньо молока");
@@ -145,14 +143,12 @@ $(".waterPlusBtn").click(function () {
     if (machine.waterAmout < 1000) {
         machine.waterAmout += 100;
         $(".water").css("height", machine.waterAmout / 10 + "%");
-        console.log(machine.waterAmout);
     }
 });
 $(".milkPlusBtn").click(function () {
     if (machine.milkAmount < 1000) {
         machine.milkAmount += 100;
         $(".milk").css("height", machine.milkAmount / 10 + "%")
-        console.log(machine.milkAmount)
     }
 });
 $(".sliderBtnPrew").click(function () {
