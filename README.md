@@ -1,2 +1,2 @@
 # coffe-machine
-js coffe machine made with OOP
+JS coffe machine made with OOP
